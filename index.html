@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<div style="box-shadow:2px 2px 3px 3px #aaaaaa; ;width: 800px;margin: auto;height: 600px">
+    <div id="all">
+        <div id="bg_1">
+        <div id="title"></div>
+
+            <marquee direction="left" behavior="scroll" scrollDelay="10" loop="-1">
+                <div id="bg_img"></div>
+            </marquee>
+        </div>
+            <div id="people"></div>
+        <div id="start" onclick="start()">
+        </div>
+        <div id="tools" style="display: none">
+        <div id="game_tool">
+            <div id="tool_title" ><span>游戏道具</span></div>
+            <div id="tool_main">
+                <div id="my_money">我的金币：<span>600</span></div>
+                <div class="jin_tool" id="jinzhongzhao">
+                    <div class="small_radius" id="choose_jin"></div>
+                    <div id="tool_man">
+                    </div>
+                </div>
+                <div class="jin_tool" id="slow">
+                    <div class="small_radius" id="choose_slow"></div>
+                    <div id="tool_time"></div>
+                </div>
+                <div id="go" onclick="go()"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="main">
+        <canvas style="position: absolute;left:0;top:0" height="600" width="800" id="bg_canvas"></canvas>
+        <canvas style="position: absolute;left:0;top:0" height="600" width="800" id="bg_role"></canvas>
+
+        <div id="main_title" onclick="change()">
+            <div id="title_radius">
+                <div id="radius_1" style="display:block">||</div>
+            </div>
+        </div>
+        <div id="score"></div>
+        <div id="man"></div>
+        <div id="pop"></div>
+        <ul id="Bullets">
+          <li style="background-color: blue"></li>
+        </ul>
+
+    </div>
+    <div id="end" style="display: none">
+        <div id="end_top">
+            <div id="end_title">色弱什么的就不要来玩游戏了嘛......</div>
+        </div>
+        <div id="end_bot">
+            <div id="bot_title"></div>
+            <div id="name_title">your name</div>
+            <input id="bot_name" value="不起名字的二逼">
+            </input>
+            <div id="next" onclick="next()">-></div>
+        </div>
+    </div>
+    <div id="message" style="display: none">
+        <div id="message_left">
+            <div id="left_title">Top Score</div>
+            <div style="height:480px;background-color: white;">
+            <table border="0" cellspacing="0" cellpadding="0" id="left_content">
+
+
+
+            </table>
+            </div>
+        </div>
+        <div id="message_right">
+            <div id="right_title">
+                <div id="title_content">GAME RESULT</div>
+                <div style=" width:400px; height:450px background-color: transparent;">
+                <table  cellspacing="0" cellpadding="0"  id="right_table">
+                    <tr style="background-color:#9beaea ">
+                        <td>得分</td>
+                        <td class="right" id="user_score"></td>
+                        <td ><span style="color:#4a939e ">&nbsp;|</span> 颜色</td>
+                        <td class="right" style="color:#4ca7bf" id="user_color"></td>
+                    </tr>
+                    <tr style="background-color:#9beaea ">
+                        <td>奖励</td>
+                        <td class="right" id="user_reward"></td>
+                        <td ><span style="color:#4a939e ">&nbsp;|</span> 金币</td>
+                        <td class="right" style="color:#ae5567" id="user_glod"></td>
+                    </tr>
+                    <tr  style="background-color:#4a939e ">
+                        <td>总分</td>
+                        <td></td>
+                        <td></td>
+                        <td class="right" id="total_score"  style="color:#dcde2e">2074</td>
+                    </tr>
+                    <tr  style="background-color:#cbf29d ">
+                        <td>最高分</td>
+                        <td></td>
+                        <td></td>
+                        <td class="right" id="top_score" style="color:#b85754"></td>
+                    </tr>
+                    <tr  style="background-color:#cbf29d ">
+                        <td colspan="1">我的金币</td>
+                        <td class="right" id="my_gold" style="color:#b85754">609</td>
+                        <td><span style="color:#4a939e ">&nbsp;|</span> 本局排名</td>
+                        <td class="right" id="my_turn"  style="color:#b85754"></td>
+                    </tr>
+                    <tr style="text-align: center">
+                        <td colspan="2"><img src="image/main.png" alt="" style="cursor: pointer" onclick="home()"/></td>
+                        <td colspan="2" ><img src="image/jixu.png" alt="" style="cursor: pointer" onclick="jixu()"/></td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/commonjs.js"></script>
+<script src="js/function.js"></script>
+<script src="js/class.js"></script>
+
+
+<script src="js/move.js"></script>
+
+</html>
