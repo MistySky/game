@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#all{
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    margin: 0px auto;
+}
+#title{
+    background-image: url("../image/logo.png");
+    width: 436px;
+    height: 92px;
+    margin: 0px auto;
+}
+#bg_img{
+    background-image:url("../image/beginbg.png");
+    width: 100%;
+    height: 77px;
+    margin: 150px auto 0px;
+    padding: 1px;
+}
+#people{
+    background-image: url("../image/man.gif");
+    width: 109px;
+    height: 192px;
+    margin:0px auto;
+    position:relative;
+    bottom: 160px;
+}
+#start{
+    width:133px;
+    height: 74px;
+    position: absolute;
+    top: 380px;
+    left:570px;
+    background-image: url("../image/start.png");
+    cursor: pointer;
+}
+#game_tool{
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    top:180px;left: 180px;
+    background-color:white;
+}
+#tool_title{
+    width: 400px;
+    height: 70px;
+    margin: 0px auto;
+    background-image: url("../image/gameovershow.png");
+}
+#tool_title span{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 130px;top:10px
+}
+#tool_main{
+    width: 490px;
+    height: 300px;
+    border: 5px solid skyblue;
+}
+.jin_tool{
+    width: 200px;
+    height: 200px;
+    float: left;
+    border-radius: 100px;
+    border: 5px solid gray;
+    margin: 25px 0px 0px 15px;
+}
+#my_money{
+    font-size: 20px;
+    width: 200px;
+    height: 20px;
+    margin: 0px auto;
+}
+.small_radius{
+     width: 50px;
+     height: 50px;
+     background-color: gray;
+     border-radius: 25px;
+ }
+#tool_man{
+    background-image: url("../image/jjz.png");
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 192px;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+#tools{
+    width: 800px;
+    height: 685px;
+    background-color: rgba(0, 0, 0, 0.20);
+    position: relative;
+    top:-600px;
+    margin: 0px auto;
+
+}
+#tool_time{
+    background-image: url("../image/slow.png");
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 192px;
+    margin-top: -20px;
+    margin-left: 30px;
+}
+#go{
+    background-image: url("../image/right2.png");
+    width: 86px;
+    height:95px;
+    z-index: 99;
+    margin-left: 450px;
+    margin-top: 80px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+#main{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left:240px;
+    display: none;
+}
+#main ul{
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top:550px;
+    display: table;
+    padding: 0;
+}
+#main ul li{
+    height: 50px;
+    display: table-cell;
+}
+#main_title{
+
+    width:30px;
+    height: 30px;
+    border-radius: 30px;
+    border:3px solid white;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;top: 10px;
+}
+#radius_1{
+    margin: 5px 0px 0px 5px;
+}
+#score{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+    margin: 0px auto;
+    position: absolute;
+    left: 350px;top:30px;
+    font-weight: bolder;
+}
+#man{
+    background-image: url("../image/man.gif");
+    background-repeat: no-repeat;
+    width: 109px;
+    height: 192px;
+    margin-top: 150px;
+    margin-left: 50px;
+    position: absolute;
+}
+#pop{
+    background-image: url("../image/pop.png");
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left:0px;
+    position: absolute;
+    display: none;
+}
+#end{
+    width: 800px;
+    height: 600px;
+    background-color: skyblue;
+    margin: 0px auto;
+}
+#end_top{
+    height: 50%;
+    width: 100%;
+    background-color: #40c9b1;
+}
+#end_bot{
+    height: 50%;
+    width: 100%;
+    background-color: #3d4262;
+    position: relative;
+}
+#end_title{
+    color: white;
+    font-size: 30px;
+    position: relative;
+    left: 100px;top:100px
+}
+#bot_title{
+    height:0px;
+    width:0px;
+    border-top: 10px solid #40c9b1;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    margin-left:290px;
+}
+#name_title{
+    color:#40c9b1 ;
+    font-size: 40px;
+    height: 40px;
+    width: 200px;
+    margin: 0px auto;
+}
+#bot_name{
+    color: white;
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+    width: 170px;
+    margin-left: 300px;
+    margin-top: 10px;
+    border: 1px solid #40c9b1;
+    outline: none;
+    background-color: transparent;
+}
+#next{
+    position: absolute;
+    left: 490px;
+    border: 2px solid white;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: white;
+    margin-top: -30px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+#message{
+    width: 800px;
+    height: 600px;
+    margin: 0px auto;
+    background-color: black;
+}
+#message_left{
+    float: left;
+    margin: 30px 0px 0px 30px;
+    width: 320px;
+    height: 530px;
+}
+#left_title{
+    height: 50px;
+    width: 100px;
+    background-color:#40c9b1 ;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+#left_content{
+    background-color:white;
+    border-top:5px solid #40c9b1;
+    font-size: 20px;
+    width: 320px;
+    font-weight: bold;
+
+}
+#left_content tr{
+    height: 30px;
+
+}
+.user_num{
+    width: 40px;
+    color: #40c9b1;
+}
+.user_score{
+    width: 50px;
+    color: red;
+    text-align: right;
+}
+#right_title{
+    width: 400px;
+    height: 70px;
+    background-image: url("../image/gameovershow.png");
+}
+#message_right{
+    float: right;
+    margin: 30px 40px 0px 0px;
+    width:400px;
+    height: 530px;
+}
+#right_table{
+    width: 400px;
+    margin-top: 50px;
+    font-size: 15px;
+    font-weight: bolder;
+}
+#title_content{
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+    left: 130px;top:10px
+}
+.right{
+    text-align: right;
+    font-size: 22px;
+}
+#right_table td{
+    height: 40px;
+    border-bottom: 7px solid black;
+}
